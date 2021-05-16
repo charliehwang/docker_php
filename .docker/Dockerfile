@@ -5,8 +5,16 @@
 # docker-compose up -d
 #  docker-compose  -f .docker/docker-compose.yml up --build
 #
-FROM php:7.4-apache
+FROM php:7.4-apache 
+
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
+		# && echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+		# && echo "xdebug.remote_host = host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini 
+
 COPY ./apache/start-apache /usr/local/bin
+COPY ./php/conf.d/xdebug.ini /usr/local/etc/php/conf.d/
+COPY ./php/conf.d/variables_order.ini /usr/local/etc/php/conf.d/
 
 WORKDIR /var/www/html
 
