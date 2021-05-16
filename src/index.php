@@ -1,29 +1,16 @@
 <?php
+// $f3=require('../vendor/bcosca/fatfree-core/base.php');
+require '../vendor/autoload.php';
 
-$a = "hi";
-$b = "yo";
-$c = "hi";
+$f3 = \Base::instance();
 
-$testA = $a == $b;
-$testB = $a == $c;
-$testC = $a === $c;
+$f3->route('GET /',
+    function($f3) {
+        $f3->set("var","value");
+        echo View::instance()->render('./ui/views/template.html');
+        // echo \Template::instance()->render('./views/template.html');
 
-echo "hi...";
-
-// function testTypeHinting(string $firstParam = "test") : void {
-
-// }
-
-function testTypeHinting(string $firstParam = "test") : void {
- echo $firstParam;
-}
-
-testTypeHinting("ho....");
-// testTypeHinting(null);
-
-$arr = [1,2,3,4,5];
-
-[$a,$b,$c] = $arr;
-print_r($a);
-print_r($b);
-print_r($c);
+        // echo 'Hello, world! F3';
+    }
+);
+$f3->run();
