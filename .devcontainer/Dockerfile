@@ -29,7 +29,6 @@ COPY ./apache/start-apache /usr/local/bin
 COPY ./php/conf.d/xdebug.ini /usr/local/etc/php/conf.d/
 COPY ./php/conf.d/variables_order.ini /usr/local/etc/php/conf.d/
 
-WORKDIR /var/www/html
 
 #COMPOSER 
 RUN curl -sS https://getcomposer.org/installer | php
@@ -39,10 +38,15 @@ RUN mv composer.phar /usr/local/bin/composer
 RUN composer global require phpunit/phpunit
 RUN composer global require spatie/phpunit-watcher
 
-ENV PATH /root/.composer/vendor/bin:$PATH
+ENV PATH /root/.composer/vendor/bin:$PATHr
 
-RUN ln -s /root/.composer/vendor/bin/phpunit /usr/bin/phpunit
-RUN ln -s /root/.composer/vendor/bin/phpunit-watcher /usr/bin/phpunit-watcher
+# RUN ln -s /root/.composer/vendor/bin/phpunit /usr/bin/phpunit
+# RUN ln -s /root/.composer/vendor/bin/phpunit-watcher /usr/bin/phpunit-watcher
+
+WORKDIR /var/www/html
+
+#F3
+RUN composer require bcosca/fatfree-core
 
 # CMD [ "ls", "-la /usr/local/bin/start*" ]
 CMD [ "start-apache"]
