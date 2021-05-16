@@ -1,0 +1,12 @@
+watch:
+  directories:
+    - src
+    - src/tests
+  exclude:
+    - lib
+  fileMask: '*.php'
+  ignoreDotFiles: true
+  ignoreVCS: true
+  ignoreVCSIgnored: false
+phpunit:
+  binaryPath: /root/.composer/vendor/bin/phpunit

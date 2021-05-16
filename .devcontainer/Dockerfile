@@ -7,7 +7,8 @@
 #
 FROM php:7.4-apache 
 
-RUN apt-get update && apt-get install -y curl git \
+RUN apt-get update && apt-get install -y \
+    curl git \
     # libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev \
 		libzip-dev zip \
 		&& docker-php-ext-configure zip \
@@ -36,10 +37,12 @@ RUN mv composer.phar /usr/local/bin/composer
 
 #PHPUNIT
 RUN composer global require phpunit/phpunit
+RUN composer global require spatie/phpunit-watcher
 
 ENV PATH /root/.composer/vendor/bin:$PATH
 
 RUN ln -s /root/.composer/vendor/bin/phpunit /usr/bin/phpunit
+RUN ln -s /root/.composer/vendor/bin/phpunit-watcher /usr/bin/phpunit-watcher
 
 # CMD [ "ls", "-la /usr/local/bin/start*" ]
 CMD [ "start-apache"]

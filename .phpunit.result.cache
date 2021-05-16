@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":316:{a:2:{s:7:"defects";a:2:{s:42:"UnitTestFiles\Test\TaxBracketTest::testing";i:4;s:23:"TaxBracketTest::testing";i:4;}s:5:"times";a:4:{s:42:"UnitTestFiles\Test\TaxBracketTest::testing";d:0.005;s:20:"TestingTest::testing";d:0;s:23:"TaxBracketTest::testing";d:0.002;s:38:"TaxBracketTest::testCalculationOfTaxes";d:0.002;}}}
