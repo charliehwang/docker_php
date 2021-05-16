@@ -38,7 +38,7 @@ RUN mv composer.phar /usr/local/bin/composer
 RUN composer global require phpunit/phpunit
 RUN composer global require spatie/phpunit-watcher
 
-ENV PATH /root/.composer/vendor/bin:$PATHr
+ENV PATH /root/.composer/vendor/bin:$PATH
 
 # RUN ln -s /root/.composer/vendor/bin/phpunit /usr/bin/phpunit
 # RUN ln -s /root/.composer/vendor/bin/phpunit-watcher /usr/bin/phpunit-watcher
