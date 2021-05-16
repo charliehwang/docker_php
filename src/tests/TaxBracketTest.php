@@ -19,6 +19,9 @@ class TaxBracketTest extends TestCase
     //null   0.4 55,000 : 10k * 0.4 = 4000
     //total tax = 1000 + 4000 + 3000 + 4000 = 12,000
     $this->assertEquals(TaxBracket\calculateTaxes(TAX_BRACKETS,5000),0);
+    $this->assertEquals(TaxBracket\calculateTaxes(TAX_BRACKETS,10000),500);
+    $this->assertEquals(TaxBracket\calculateTaxes(TAX_BRACKETS,15000),1000);
+    $this->assertEquals(TaxBracket\calculateTaxes(TAX_BRACKETS,55000),12000);
  
     
   }

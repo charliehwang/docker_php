@@ -6,17 +6,14 @@ function calculateTaxes($brackets, $salary) {
 
 	// error out of $brackets or $salary is not set
 
-	// foreach ($brackets as [$salaryBracket, $taxBracket]) {
-	echo "\n";
 	foreach ($brackets as [$salaryBracket, $taxBracket]) {
-		// [$salaryBracket, $taxBracket] = $bracket;
-		// print_r($bracket);
-		// print_r("=>".$salaryBracket." = ".$taxBracket."\n");
-		// if ($salary === 0 || $salary < ) {
-		// 	break;
-		// }
-		//
- 	
+		if (is_null($salaryBracket)  || $salary === 0 || $salary <= $salaryBracket) {
+			$tax += $salary * $taxBracket; // 0 + $5,000*0.1
+			break;
+		} else {
+			$salary -= $salaryBracket; 
+			$tax += $salaryBracket * $taxBracket; 
+		}
 	}
 
 	return $tax;
