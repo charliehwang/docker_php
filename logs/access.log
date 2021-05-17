@@ -113,3 +113,8 @@
 172.19.0.1 - - [16/May/2021:23:24:55 +0000] "GET / HTTP/1.1" 200 765 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
 172.19.0.1 - - [16/May/2021:23:25:47 +0000] "GET /test.php HTTP/1.1" 200 295 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
 172.19.0.1 - - [16/May/2021:23:27:00 +0000] "GET /test.php HTTP/1.1" 200 280 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+172.19.0.1 - - [17/May/2021:00:14:38 +0000] "GET /test.php HTTP/1.1" 200 295 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+172.19.0.1 - - [17/May/2021:00:14:42 +0000] "GET / HTTP/1.1" 500 708 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+172.19.0.1 - - [17/May/2021:00:15:24 +0000] "GET / HTTP/1.1" 200 769 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+172.19.0.1 - - [17/May/2021:00:15:24 +0000] "GET /ui/css/template.css HTTP/1.1" 304 179 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+172.19.0.1 - - [17/May/2021:00:15:24 +0000] "GET /ui/js/template.js HTTP/1.1" 200 364 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"

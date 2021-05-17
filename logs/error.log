@@ -240,3 +240,11 @@
 [Sun May 16 23:22:06.569699 2021] [php7:notice] [pid 21] [client 172.19.0.1:62610] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
 [Sun May 16 23:24:49.211753 2021] [php7:notice] [pid 21] [client 172.19.0.1:62742] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
 [Sun May 16 23:24:49.250560 2021] [php7:notice] [pid 21] [client 172.19.0.1:62742] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[Mon May 17 00:14:38.031776 2021] [php7:notice] [pid 21] [client 172.19.0.1:63408] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[Mon May 17 00:14:42.480676 2021] [php7:notice] [pid 21] [client 172.19.0.1:63408] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[Mon May 17 00:14:42.518529 2021] [php7:notice] [pid 21] [client 172.19.0.1:63408] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[Mon May 17 00:14:42.519620 2021] [php7:notice] [pid 21] [client 172.19.0.1:63408] syntax error, unexpected 'echo' (T_ECHO) [/var/www/html/src/ui/views/template.html:17]
+[Mon May 17 00:14:42.520637 2021] [php7:notice] [pid 21] [client 172.19.0.1:63408] [index.php:12] View->render()
+[Mon May 17 00:14:42.522693 2021] [php7:notice] [pid 21] [client 172.19.0.1:63408] [index.php:18] Base->run()
+[Mon May 17 00:15:24.395587 2021] [php7:notice] [pid 22] [client 172.19.0.1:63418] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[Mon May 17 00:15:24.427903 2021] [php7:notice] [pid 22] [client 172.19.0.1:63418] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(

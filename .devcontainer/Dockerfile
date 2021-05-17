@@ -37,6 +37,7 @@ RUN mv composer.phar /usr/local/bin/composer
 #PHPUNIT
 RUN composer global require phpunit/phpunit
 RUN composer global require spatie/phpunit-watcher
+RUN composer global require friendsofphp/php-cs-fixer
 
 ENV PATH /root/.composer/vendor/bin:$PATH
 
