@@ -41,6 +41,8 @@ $dict = [
     'key3' => 'val3',
 ];
 
+$dict['key2'] = 'NEW Value';
+
 foreach ($dict as $key => $val) {
     echo $key.' = '.$val, "\n";
 }
