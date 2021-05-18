@@ -25,5 +25,6 @@
   "php-cs-fixer.autoFixByBracket": true,
   "php-cs-fixer.autoFixBySemicolon": false,
   "php-cs-fixer.formatHtml": true,
-  "php-cs-fixer.documentFormattingProvider": true
+  "php-cs-fixer.documentFormattingProvider": true,
+  "git.ignoreLimitWarning": true
 }

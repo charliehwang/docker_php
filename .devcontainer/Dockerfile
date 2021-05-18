@@ -10,6 +10,8 @@ FROM php:7.4-apache
 RUN apt-get update && apt-get install -y \
     curl git \
     # libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev \
+    # Node
+    npm nodejs \
 		libzip-dev zip \
 		&& docker-php-ext-configure zip \
     && docker-php-ext-install zip 
@@ -48,6 +50,9 @@ WORKDIR /var/www/html
 
 #F3
 RUN composer require bcosca/fatfree-core
+
+# npm
+RUN npm i
 
 # CMD [ "ls", "-la /usr/local/bin/start*" ]
 CMD [ "start-apache"]

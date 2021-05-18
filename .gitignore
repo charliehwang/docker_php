@@ -3,3 +3,4 @@ vendor/
 .phpunit.result.cache
 logs/*
 .php-cs-fixer.cache
+node_modules
