@@ -7,7 +7,7 @@
 		</report>
 	</coverage>
 	<testsuites>
-		<testsuite name="Testing Tests">
+		<testsuite name="Testsuite Name">
 			<directory>./src/tests</directory>
 		</testsuite>
 	</testsuites>

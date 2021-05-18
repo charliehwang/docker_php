@@ -16,7 +16,7 @@ echo 'hi...';
 
 function testTypeHinting(string $firstParam = 'test'): void
 {
-    echo $firstParam;
+    return $firstParam;
 }
 
 testTypeHinting('ho....');

@@ -1,5 +1,5 @@
 // /node_modules/.bin/jest --no-cache --watch ./src/ui/js/tests/testFunctions.test.ts
-import { mult } from '../testFunctions'
+import { mult } from '../functions'
 
 describe('Test Suite', () => {
   it('Should multiply correctly', () => {

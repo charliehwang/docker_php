@@ -1,5 +1,6 @@
 <?php
 
+// phpunit-watcher watch --filter TaxBracketTest::testCalculationOfTaxes
 // phpunit --filter TaxBracketTest::testCalculationOfTaxes
 
 // namespace UnitTestFiles\Test;
