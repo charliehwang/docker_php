@@ -1,5 +1,9 @@
 <?php
 
+print("\n");
+print("\n");
+#############################
+
 $a = 'hi';
 $b = 'yo';
 $c = 'hi';
@@ -16,7 +20,7 @@ echo 'hi...';
 
 function testTypeHinting(string $firstParam = 'test'): void
 {
-    return $firstParam;
+    echo $firstParam;
 }
 
 testTypeHinting('ho....');
@@ -28,3 +32,20 @@ $arr = [1,2,3,4,5];
 print_r($a);
 print_r($b);
 print_r($c);
+print("\n");
+
+
+$dict = [
+    'key1' => 'val1',
+    'key2' => 'val2',
+    'key3' => 'val3',
+];
+
+foreach ($dict as $key => $val) {
+    echo $key.' = '.$val, "\n";
+}
+
+#############################
+print("\n");
+print("\n");
+print("\n");
